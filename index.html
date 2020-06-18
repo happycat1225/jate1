@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DROPOUT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gothic+A1:wght@800&display=swap" rel="stylesheet">
+    <style type="text/css">
+html { scroll-behavior: smooth;}
+
+header {background-image:url("home.jpg"); background-repeat:no-repeat; background-position: center;
+width:100%; height:980px;}
+main {background-image:url("time.jpg"); background-repeat:no-repeat; background-position: center;
+width:100%; height:1080px;}
+section {background-image:url("money.jpg"); background-repeat:no-repeat; background-position: center;
+width:100%; height:1080px;}
+footer {background-image:url("compare.jpg"); background-repeat:no-repeat; background-position: center;
+width:100%; height:1080px;}
+
+nav {background-color: white; width:100%; height:55px; display:flex;}
+nav> a {font-family: 'Fredoka One', cursive; color:#7f44b0; font-size: 30px; text-decoration: none;}
+nav> ul, li {margin:0; padding:0; list-style:none; display: inline;}
+li> a {font-family: 'Gothic A1', sans-serif; font-size:18px;}
+li> a:link {text-decoration:none; color:#bfa4e0;}
+li> a:visited {text-decoration:none; color:#bfa4e0;}
+li> a:hover {text-decoration:none; color:#7f44b0;}
+.menu {position:relative; top:20%; margin:5px 0 0 50px;}
+
+.up {background-color: white; width:60px; height: 60px; position: fixed; top:92%; left:95%; border-radius: 100%;
+box-shadow: 0px 0px 5px gray;}
+
+@media only screen and (max-width: 768px) {
+li>a {font-size: 15px;}
+.menu {margin: 5px 0 0 20px;}
+.img1 {display: none;}}
+
+.navbar2 {margin:15px; position:absolute; top: 0%; right:1%; display: flex;}
+.img1 {margin:5px;}
+.img1:link {text-decoration:none; opacity: 0.5;}
+.img1:visited {text-decoration:none; opacity: 0.5;}
+.img1:hover {text-decoration:none; opacity: 1;}
+
+.hat {width: 630px; position:relative; left:50%; top: -20%;}
+@media only screen and (max-width: 768px) {
+.hat {position:relative; left:20%; top: -25%;}
+.hat>img {width:300px; height: 250px;}}
+
+.Dropout {position: relative; right:30%; top: 25%; text-align: center; }
+.Dropout>h1 {color:white; font-family: 'Fredoka One', cursive; font-size:80px;}
+.Dropout>h3 {color:white; font-family: 'Gothic A1', sans-serif; font-size:30px; opacity: 0.8;}
+@media only screen and (max-width: 768px) {
+.Dropout {position: relative; top: 25%; left:1%; text-align: center; }
+.Dropout>h1 {color:white; font-family: 'Fredoka One', cursive; font-size:50px;}
+.Dropout>h3 {color:white; font-family: 'Gothic A1', sans-serif; font-size:25px; opacity: 0.8;}}
+
+.Dropout>a {background-color:white; padding:15px 20px 10px 20px; border-radius: 50px; font-family: 'Gothic A1', sans-serif; font-size:20px;}
+.Dropout>a:link {text-decoration:none; color:#7f44b0;}
+.Dropout>a:visited {text-decoration:none; color:#7f44b0;}
+.Dropout>a:hover {text-decoration:none; background-color:#7f44b0; color:white; border:3px solid #7f44b0; border-color: white;}
+
+.text {text-align: center; font-family: 'Gothic A1', sans-serif; font-size: 35px; color:#7f44b0; padding:40px;}
+.text2 {text-align: center; font-family: 'Gothic A1', sans-serif; font-size: 30px; color:#7f44b0; padding:40px; opacity: 0.6;}
+@media only screen and (max-width: 768px) {
+.text {text-align: center; font-family: 'Gothic A1', sans-serif; font-size: 30px; color:#7f44b0; padding:40px;}
+.text2 {text-align: center; font-family: 'Gothic A1', sans-serif; font-size: 25px; color:#7f44b0; padding:40px; opacity: 0.6;}
+}
+.dropdown {width:250px; background-color: white; border: 1px solid white; padding: 0.8em 3.5em 0.7em 1em;
+font-family: 'Gothic A1', sans-serif; color:#7f44b0; font-size: 18px;
+border-radius: 10px; margin: 0 100px 60px 100px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none;
+background-image: url("arrow.png"); background-repeat: no-repeat; background-position: right;
+box-shadow: 0px 0px 5px #b7b7b7;}
+.dropdown:focus {background-color: #7f44b0; color: white; border:3px solid white;
+background-image: url("arrow2.png"); background-repeat: no-repeat; background-position: right;}
+
+.center>a {background-color:#7f44b0;; padding:15px 20px 10px 20px; border-radius: 50px; font-family: 'Gothic A1', sans-serif; font-size:20px;}
+.center>a:link {text-decoration:none; color:white;}
+.center>a:visited {text-decoration:none; color:white;}
+.center>a:hover {text-decoration:none; background-color:white; color:#7f44b0; border:3px solid #7f44b0; border-color:#7f44b0;}
+
+.center { text-align: center;position:relative; top:30%;}
+.center2 { text-align: center;position:relative; top:30%;}
+
+.dropdown2 {width:250px; background-color: white; border: 1px solid white; padding: 0.8em 3.5em 0.7em 1em;
+font-family: 'Gothic A1', sans-serif; color:#f3a7c5; font-size: 18px;
+border-radius: 10px; margin: 0 100px 60px 100px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none;
+background-image: url("arrow3.png"); background-repeat: no-repeat; background-position: right;
+box-shadow: 0px 0px 5px #b7b7b7;}
+.dropdown2:focus {background-color: #f3a7c5; color: white; border:3px solid white;
+background-image: url("arrow2.png"); background-repeat: no-repeat; background-position: right;}
+
+.center2>a {background-color:white; padding:15px 20px 10px 20px; border-radius: 50px; font-family: 'Gothic A1', sans-serif; font-size:20px;}
+.center2>a:link {text-decoration:none; color:#7f44b0;}
+.center2>a:visited {text-decoration:none; color:#7f44b0;}
+.center2>a:hover {text-decoration:none; background-color:#7f44b0; color:white; border:3px solid white;}
+
+
+
+  </style>
+  </head>
+
+  <body>
+
+<header>
+  <nav>
+    <a href="index.html"><span>DROPOUT</span></a>
+    <ul id="navb">
+      <li><a class="menu" href="#time">시간 계산기</a></li>
+      <li><a class="menu" href="#money">비용 계산기</a></li>
+      <li><a class="menu" href="#compare">비교 해보기</a></li>
+      <div class="navbar2">
+      <li><a class="img1" href="https://www.facebook.com/">
+      <img src="face.jpg" width="30" height="30" alt="">
+      </a></li>
+      <li><a class="img1" href="https://www.instagram.com/?hl=ko">
+      <img src="insta.jpg" width="30" height="30" alt="">
+      </a></li>
+      <li><a class="img1" href="https://twitter.com/explore">
+      <img src="twit.jpg" width="30" height="30" alt="">
+      </a></li>
+      </div>
+    </ul>
+
+  </nav>
+
+  <div class="Dropout">
+    <h1>DROPOUT</h1><br />
+    <h3>대학에 쓴 돈과 시간이 어느정도 일까?</h3><br />
+    <a href="#time">계산해보기</a>
+  </div>
+
+  <div class="hat">
+  <img src="hat.png" width="900" height="550">
+ </div>
+ <div class="up">
+  <a href="#navb"><img src="up arrow.jpg" width="40" height="40" style="margin:10px;"/></a>
+ </div>
+</header>
+
+<main id="time">
+  <div class="center">
+  <div class="text">
+    대학에 드는 시간이 어느정도 일까?
+  </div>
+  <div class="text2">
+    대학에 드는 시간을 다른 시간들로 환산하여 계산해 줍니다!
+  </div>
+
+  <a href="index2.html">계산해보기</a>
+    </div>
+</main>
+
+<section id="money">
+  <div class="center">
+  <div class="text">
+    대학에 드는 비용이 어느정도 일까?
+  </div>
+  <div class="text2">
+    대학에 드는 비용을 다른 비용들로 환산하여 계산해 줍니다!
+  </div>
+
+  <a href="index3.html">계산해보기</a>
+    </div>
+</section>
+
+<footer id ="compare">
+  <div class="center2">
+  <div class="text" style="color:white;">
+    다른 것과 비교 해보기
+  </div>
+  <div class="text2" style="color:white;">
+    대학과 다른 진로를 비교 해드립니다!
+  </div>
+  <a href="index4.html">계산해보기</a>
+    </div>
+</footer>
+
+  </body>
+</html>

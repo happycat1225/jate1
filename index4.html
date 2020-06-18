@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DROPOUT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gothic+A1:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
+
+    <script language="javascript">
+
+function addOperation(){
+var operand1;
+var operand2;
+var result;
+
+operand1 = Number(document.getElementById("input1").value);
+operand2 = Number(document.getElementById("input2").value);
+
+if (operand1 == 1) {document.getElementById("img1").src = "try1.jpg";}
+else {document.getElementById("img1").src = "white.jpg";}
+if (operand2 == 1) {document.getElementById("img2").src = "try2.jpg";}
+else {document.getElementById("img2").src = "white.jpg";}
+
+if (operand1 == 1) {document.getElementById("img3").src = "try1.jpg";}
+else {document.getElementById("img3").src = "white.jpg";}
+if (operand2 == 1) {document.getElementById("img4").src = "try2.jpg";}
+else {document.getElementById("img4").src = "white.jpg";}
+
+if (operand1 == 1) {document.getElementById("img5").src = "people1.jpg";}
+else {document.getElementById("img5").src = "white.jpg";}
+if (operand2 == 1) {document.getElementById("img6").src = "people2.jpg";}
+else {document.getElementById("img6").src = "white.jpg";}
+
+if (operand1 == 1) {document.getElementById("img7").src = "book.jpg";}
+else {document.getElementById("img7").src = "white.jpg";}
+if (operand2 == 1) {document.getElementById("img8").src = "work.jpg";}
+else {document.getElementById("img8").src = "white.jpg";}
+
+if (operand1 == 1) {document.getElementById("img9").src = "gradu.jpg";}
+else {document.getElementById("img9").src = "white.jpg";}
+if (operand2 == 1) {document.getElementById("img0").src = "gunmu.jpg";}
+else {document.getElementById("img0").src = "white.jpg";}}
+
+    </script>
+
+    <style type="text/css">
+
+header {background-image:url("compare.jpg"); background-repeat:no-repeat; background-position: center;
+width:100%; height:1080px;}
+
+nav {background-color: white; width:100%; height:55px; display:flex;}
+nav> a {font-family: 'Fredoka One', cursive; color:#7f44b0; font-size: 30px; text-decoration: none;}
+nav> ul, li {margin:0; padding:0; list-style:none; display: inline;}
+li> a {font-family: 'Gothic A1', sans-serif; font-size:18px;}
+li> a:link {text-decoration:none; color:#bfa4e0;}
+li> a:visited {text-decoration:none; color:#bfa4e0;}
+li> a:hover {text-decoration:none; color:#7f44b0;}
+.menu {position:relative; top:20%; margin:5px 0 0 50px;}
+
+@media only screen and (max-width: 768px) {
+li>a {font-size: 15px;}
+.menu {margin: 5px 0 0 20px;}
+.img1 {display: none;}}
+
+.navbar2 {margin:15px; position:absolute; top: 0%; right:1%; display: flex;}
+.img1 {margin:5px;}
+.img1:link {text-decoration:none; opacity: 0.5;}
+.img1:visited {text-decoration:none; opacity: 0.5;}
+.img1:hover {text-decoration:none; opacity: 1;}
+
+.text {text-align: center; font-family: 'Gothic A1', sans-serif; font-size: 35px; color:white; padding:40px;}
+.text2 {text-align: center; font-family: 'Gothic A1', sans-serif; font-size: 30px; color:white; padding:20px; opacity: 0.6;}
+@media only screen and (max-width: 768px) {
+.text {text-align: center; font-family: 'Gothic A1', sans-serif; font-size: 30px; color:white; padding:40px;}
+.text2 {text-align: center; font-family: 'Gothic A1', sans-serif; font-size: 25px; color:white; padding:20px; opacity: 0.6;}
+}
+
+.dropdown {width:250px; background-color: white; border: 1px solid white; padding: 0.8em 3.5em 0.7em 1em;
+font-family: 'Gothic A1', sans-serif; color:#7f44b0; font-size: 18px;
+border-radius: 10px; margin: 0 100px 30px 100px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none;
+background-image: url("arrow.png"); background-repeat: no-repeat; background-position: right;
+box-shadow: 0px 0px 5px #b7b7b7; position: relative; left:8%;}
+.dropdown:focus {background-color: #7f44b0; color: white; border:3px solid white;
+background-image: url("arrow2.png"); background-repeat: no-repeat; background-position: right;}
+
+.dropdown2 {width:250px; background-color: white; border: 1px solid white; padding: 0.8em 3.5em 0.7em 1em;
+font-family: 'Gothic A1', sans-serif; color:#f3a7c5; font-size: 18px;
+border-radius: 10px; margin: 0 100px 30px 100px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+box-sizing: border-box; -webkit-appearance: none; -moz-appearance: none;
+background-image: url("arrow3.png"); background-repeat: no-repeat; background-position: right;
+box-shadow: 0px 0px 5px #b7b7b7;}
+.dropdown2:focus {background-color: #f3a7c5; color: white; border:3px solid white;
+background-image: url("arrow2.png"); background-repeat: no-repeat; background-position: right;}
+
+.center>a {background-color:white; padding:15px 20px 10px 20px; border-radius: 50px; font-family: 'Gothic A1', sans-serif; font-size:20px;}
+.center>a:link {text-decoration:none; color:#7f44b0;}
+.center>a:visited {text-decoration:none; color:#7f44b0;}
+.center>a:hover {text-decoration:none; background-color:#7f44b0; color:white; border:3px solid white;}
+
+.center { text-align: center;}
+
+.box1 {width:400px; height:50px; background-color: white; box-shadow:0px 0px 5px #7f44b0; border-radius: 10px; color:#7f44b0;
+text-align: center; font-family: 'Jua', sans-serif; font-size: 35px; color:#7f44b0; padding-top: 6px;}
+
+.box2 {width:500px; height: 280px; box-shadow:0px 0px 5px #b7b7b7; border-radius: 10px; color:#7f44b0; position: relative; left:6%; margin: 0 0 0 40px;
+background-color: white;}
+
+.flex {display:flex; margin-top: 40px;}
+
+.float {height:100%; width:50%; float:left; box-sizing: border-box;}
+.float> img {position: relative; top:22%;}
+
+.float> h2 {margin-top: 80px;}
+.box3 {background-color: white; width: 220px; height: 45px; box-shadow: 0px 0px 5px #7f44b0; border-radius: 10px;
+text-align: center; font-family: 'Jua', sans-serif; font-size: 30px; color:#7f44b0;}
+
+.box4 {width:770px; height: 280px; box-shadow:0px 0px 5px #b7b7b7; border-radius: 10px; color:#7f44b0; position: relative; left:6%; margin: 0 0 0 40px;
+background-color: white;}
+
+  </style>
+  </head>
+
+  <body>
+
+<header>
+  <nav>
+    <a href="index.html"><span>DROPOUT</span></a>
+    <ul id="navb">
+      <li><a class="menu" href="index2.html">시간 계산기</a></li>
+      <li><a class="menu" href="index3.html">비용 계산기</a></li>
+      <li><a class="menu" href="index4.html">비교 해보기</a></li>
+      <div class="navbar2">
+      <li><a class="img1" href="https://www.facebook.com/">
+      <img src="face.jpg" width="30" height="30" alt="">
+      </a></li>
+      <li><a class="img1" href="https://www.instagram.com/?hl=ko">
+      <img src="insta.jpg" width="30" height="30" alt="">
+      </a></li>
+      <li><a class="img1" href="https://twitter.com/explore">
+      <img src="twit.jpg" width="30" height="30" alt="">
+      </a></li>
+      </div>
+    </ul>
+  </nav>
+  <div class="center">
+  <div class="text">
+    다른 것과 비교 해보기
+  </div>
+  <div class="text2">
+    대학과 다른 진로를 비교해 드립니다!
+  </div>
+  <select class="dropdown" Id="input1">
+      <option value="1" >4년제 대학</option>
+      <option value="2" >미정</option>
+  </select>
+  <select class="dropdown2" Id="input2">
+    <option value="1">고졸 취업</option>
+    <option value="2">미정</option>
+  </select>
+  <a href=# onclick="addOperation()">비교해보기</a>
+  <br />
+<br />
+<div class="flex">
+
+<div class="box4">
+  <div class="float">
+<img id="img1" src="white.jpg" width="250"; height="250" style="margin-top:-50px;"/>
+</div>
+<div class="float">
+<img id="img2" src="white.jpg" width="250"; height="250" style="margin-top:-50px;" />
+</div>
+</div>
+
+<div class="box4">
+  <div class="float">
+    <img id="img3" src="white.jpg" width="250"; height="250" style="margin-top:-50px;"/>
+    </div>
+  <div class="float">
+  <img id="img4" src="white.jpg" width="250"; height="250" style="margin-top:-50px;" />
+</div>
+</div>
+
+</div>
+
+<div class="flex">
+<div class="box2">
+  <div class="float">
+    <img id="img5" src="white.jpg" width="200"; height="250" style="margin-top:-50px;"/>
+    </div>
+  <div class="float">
+  <img id="img6" src="white.jpg" width="200"; height="250" style="margin-top:-50px;"/>
+  </div>
+</div>
+
+<div class="box2">
+  <div class="float">
+    <img id="img7" src="white.jpg" width="200"; height="250" style="margin-top:-50px;"/>
+    </div>
+  <div class="float">
+  <img id="img8" src="white.jpg" width="200"; height="250" style="margin-top:-50px;" />
+</div>
+</div>
+
+<div class="box2">
+  <div class="float">
+    <img id="img9" src="white.jpg" width="200"; height="250" style="margin-top:-50px;"/>
+    </div>
+  <div class="float">
+  <img id="img0" src="white.jpg" width="200"; height="250" style="margin-top:-50px;" />
+</div>
+</div>
+</div>
+
+</div>
+
+</header>
+  </body>
+</html>
